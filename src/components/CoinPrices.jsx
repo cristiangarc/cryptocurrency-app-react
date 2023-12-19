@@ -1,10 +1,12 @@
-const var1 = import.meta.env.VITE_VAR1;
+import API from "./API";
 
 const CoinPrices = () => {
+    const getCoinPrices = () => {};
+
     return (
         <div>
             <h2>Coin Prices</h2>
-            <p>Variable 1: {var1}</p>
+            <API />
         </div>
     );
 };
