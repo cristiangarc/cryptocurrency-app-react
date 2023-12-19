@@ -1,4 +1,4 @@
-import CoinPrices from "./CoinPrices";
+import CoinPrices from "./components/CoinPrices";
 
 const App = () => {
     return (
