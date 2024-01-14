@@ -1,12 +1,13 @@
-import API from "./API";
+import { useEffect, useState } from "react";
+
+import API from "./api.jsx";
 
 const CoinPrices = () => {
-    const getCoinPrices = () => {};
-
     return (
         <div>
-            <h2>Coin Prices</h2>
-            <API />
+            <h2>
+                <API />
+            </h2>
         </div>
     );
 };
