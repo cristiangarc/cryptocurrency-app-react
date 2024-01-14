@@ -26,8 +26,8 @@ const CoinsAndPrices = () => {
 
     return (
         <div>
-            <main class="coins">
-                <section class="primary">
+            <main className="coins">
+                <section className="primary">
                     {data &&
                         Object.keys(data).map((coin) => (
                             <li key={v1()}>

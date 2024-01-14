@@ -1,3 +1,5 @@
+import { Routes, Route, Link } from "react-router-dom";
+
 import { getUpdatedPrices } from "./components/api";
 
 import CoinsAndPrices from "./components/CoinsAndPrices.jsx";
@@ -10,15 +12,25 @@ const App = () => {
                 <h1>Cryptocurrency App</h1>
                 <section className="navigation">
                     <div>
-                        <a href="./index.html">Home</a>
+                        <Link to={"/"}>Home</Link>
                     </div>
                     <div>
-                        <a href="./news.html">News</a>
+                        <Link to={"/news"}>News</Link>
                     </div>
                 </section>
             </header>
-            <CoinsAndPrices />
-            <TopTradedCoins />
+            <Routes>
+                <Route
+                    path="/"
+                    element={
+                        <>
+                            <CoinsAndPrices />
+                            <TopTradedCoins />
+                        </>
+                    }
+                />
+                <Route path="/news" element={<div>News</div>} />
+            </Routes>
             {/* <article className="move-left"><h3><<h3></article>
         <article className="move-right"><h3>><h3></article> */}
         </div>
