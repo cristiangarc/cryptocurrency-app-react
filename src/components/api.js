@@ -16,7 +16,7 @@ const coins = [
 const coinsStr = coins.join(",");
 
 const url1 = `https://min-api.cryptocompare.com/data/pricemulti?fsyms=${coinsStr}&tsyms=USD`;
-const url2 = "https://min-api.cryptocompare.com/data/top/totalvolfull?limit=10&tsym=USD";
+const url2 = "https://min-api.cryptocompare.com/data/top/totalvolfull?limit=6&tsym=USD";
 
 export const getUpdatedPrices = () => {
     return fetch(url1, {

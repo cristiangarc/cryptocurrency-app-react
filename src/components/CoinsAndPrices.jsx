@@ -30,10 +30,10 @@ const CoinsAndPrices = () => {
                 <section className="primary">
                     {data &&
                         Object.keys(data).map((coin) => (
-                            <li key={v1()}>
-                                <p>{coin}</p>
-                                <p>{data[coin]["USD"]} USD</p>
-                            </li>
+                            <article key={v1()}>
+                                <h2>{coin}</h2>
+                                <h3>{data[coin]["USD"]} USD</h3>
+                            </article>
                         ))}
                 </section>
             </main>

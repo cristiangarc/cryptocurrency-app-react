@@ -5,6 +5,9 @@ import { getUpdatedPrices } from "./components/api";
 import CoinsAndPrices from "./components/CoinsAndPrices.jsx";
 import TopTradedCoins from "./components/TopTradedCoins.jsx";
 
+import "./App.css";
+import { useState } from "react";
+
 const App = () => {
     return (
         <div>
@@ -31,8 +34,6 @@ const App = () => {
                 />
                 <Route path="/news" element={<div>News</div>} />
             </Routes>
-            {/* <article className="move-left"><h3><<h3></article>
-        <article className="move-right"><h3>><h3></article> */}
         </div>
     );
 };
